@@ -5,12 +5,12 @@
           {
             "field": "sender",
             "predicate": "contains",
-            "value": "noreply@zomato.com"
+            "value": "noreply@swiggy.in"
           },
           {
             "field": "subject",
             "predicate": "contains",
-            "value": "Your Zomato order"
+            "value": "Your Swiggy order"
           },
           {
             "field": "received_at",
@@ -31,7 +31,7 @@
           {
             "field": "sender",
             "predicate": "contains",
-            "value": "noreply@swiggy.in"
+            "value": "no-reply@accounts.google.com"
           }
         ],
         "predicate": "Any",
