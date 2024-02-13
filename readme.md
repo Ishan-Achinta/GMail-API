@@ -59,6 +59,7 @@ Here's an example of a rule in the JSON format:
     {"action": "move_message", "destination_folder": "Processed"}
   ]
 }
+```
 
 ## Common Gmail Labels (Accepted Values)
 
