@@ -33,7 +33,7 @@ Before using the email processing script, ensure you have the following prerequi
     After fetching emails, run the script `retrieve_mails.py` to apply rules defined in a JSON file and take actions on the emails.
 
     ```bash
-    python process_emails.py rules.json
+    python retrieve_mails.py
     ```
 
     Replace `rules.json` with the path to your JSON file containing the rules.
