@@ -49,16 +49,36 @@ Here's an example of a rule in the JSON format:
 
 ```json
 {
-  "conditions": [
-    {"field": "sender", "predicate": "contains", "value": "example.com"},
-    {"field": "received_at", "predicate": "greater_than", "value": "2023-01-01"}
-  ],
-  "predicate": "All",
-  "actions": [
-    {"action": "mark_as_read"},
-    {"action": "move_message", "destination_folder": "Processed"}
-  ]
-}
+    "rules": [
+      {
+        "conditions": [
+          {
+            "field": "sender",
+            "predicate": "contains",
+            "value": "noreply@something.in"
+          },
+          {
+            "field": "subject",
+            "predicate": "contains",
+            "value": "Your order"
+          },
+          {
+            "field": "received_at",
+            "predicate": "less_than",
+            "value": "2024-02-13"
+          }
+        ],
+        "predicate": "All",
+        "actions": [
+          {
+            "action": "move_message",
+            "destination_folder": "SPAM"
+          }
+        ]
+      }
+    ]
+  }
+  
 ```
 
 ## Common Gmail Labels (Accepted Values)

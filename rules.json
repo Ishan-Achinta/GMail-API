@@ -5,12 +5,12 @@
           {
             "field": "sender",
             "predicate": "contains",
-            "value": "noreply@swiggy.in"
+            "value": "noreply@something.in"
           },
           {
             "field": "subject",
             "predicate": "contains",
-            "value": "Your Swiggy order"
+            "value": "Your order"
           },
           {
             "field": "received_at",
@@ -23,21 +23,6 @@
           {
             "action": "move_message",
             "destination_folder": "SPAM"
-          }
-        ]
-      },
-      {
-        "conditions": [
-          {
-            "field": "sender",
-            "predicate": "contains",
-            "value": "no-reply@accounts.google.com"
-          }
-        ],
-        "predicate": "Any",
-        "actions": [
-          {
-            "action": "mark_as_read"
           }
         ]
       }
