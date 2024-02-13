@@ -1,4 +1,4 @@
-# Email Processing Script Usage Guide
+# GMail API Script Usage Guide
 
 This guide provides instructions on how to use the email processing script to fetch emails from a PostgreSQL database, apply rules defined in a JSON file, and take actions on those emails based on the rules.
 
