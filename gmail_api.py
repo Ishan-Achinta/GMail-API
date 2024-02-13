@@ -35,7 +35,7 @@ def authenticate():
     return creds
 
 
-def fetch_emails():
+def fetch_emails(count):
     # Fetch mails using GMail API
     creds = authenticate()
     service = build('gmail', 'v1', credentials=creds)
@@ -45,7 +45,7 @@ def fetch_emails():
         print("No messages found.")
     else:
         print("Messages:")
-        for message in messages[:10]:
+        for message in messages[:count]:
             msg = service.users().messages().get(userId='me', id=message['id']).execute()
             print("Message ID:", msg['id'])
             print("Snippet:", msg['snippet'])
@@ -101,4 +101,5 @@ def store_email_in_database(email_message):
 
 
 if __name__ == '__main__':
-    fetch_emails()
+    count_required = int(input("Enter the number of emails to be fetched: "))
+    fetch_emails(count_required)
