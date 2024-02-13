@@ -60,25 +60,8 @@ Here's an example of a rule in the JSON format:
   ]
 }
 
-## List of Common Gmail Labels
+## Common Gmail Labels (Accepted Values)
 
-- CHAT
-- SENT
-- INBOX
-- IMPORTANT
-- TRASH
-- DRAFT
-- SPAM
-- CATEGORY_FORUMS
-- CATEGORY_UPDATES
-- CATEGORY_PERSONAL
-- CATEGORY_PROMOTIONS
-- CATEGORY_SOCIAL
-- STARRED
-- UNREAD
-- Personal
-- Receipts
-- Work
-- Junk
-- Documents
-- Unwanted
+When specifying a destination folder for actions like moving messages, you can use the following commonly accepted values:
+
+CHAT, SENT, INBOX, IMPORTANT, TRASH, DRAFT, SPAM, CATEGORY_FORUMS, CATEGORY_UPDATES, CATEGORY_PERSONAL, CATEGORY_PROMOTIONS, CATEGORY_SOCIAL, STARRED, UNREAD, Personal, Receipts, Work, Junk, Documents, Unwanted
