@@ -13,24 +13,24 @@ Before using the email processing script, ensure you have the following prerequi
 ## Configuration
 
 1. Ensure PostgreSQL is installed and running on your system.
-2. Set up the Gmail API and obtain credentials for OAuth authentication. Place the credentials file (`credentials.json`) in the same directory as the script.
-3. Configure the PostgreSQL database connection details in the script (`fetch_mails.py`) under the `DATABASE_CONFIG` section.
+2. Set up the Gmail API and obtain credentials for OAuth authentication. Place the credentials file (`client_secret.json`) in the same directory as the script.
+3. Configure the PostgreSQL database connection details in the script (`gmail_api.py`) and (`fetch_mails.py`) under the `connect_to_postgresql` section.
 
 ## Usage
 
 1. **Fetching Emails:**
 
-    Run the script `fetch_mails.py` to fetch emails from the PostgreSQL database.
+    Run the script `gmail_api.py` to fetch emails from using the GMail API and store the retrived emails in the PostgreSQL database.
 
     ```bash
-    python fetch_mails.py
+    python gmail_api.py
     ```
 
-    This script will connect to the database, fetch emails, and store them locally.
+    This script will connect to the GMail API using OAuth, fetch emails, and store them locally in the PostgreSQL database.
 
 2. **Processing Emails:**
 
-    After fetching emails, run the script `process_emails.py` to apply rules defined in a JSON file and take actions on the emails.
+    After fetching emails, run the script `retrieve_mails.py` to apply rules defined in a JSON file and take actions on the emails.
 
     ```bash
     python process_emails.py rules.json
