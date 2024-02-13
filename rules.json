@@ -10,7 +10,7 @@
           {
             "field": "subject",
             "predicate": "contains",
-            "value": "fefef"
+            "value": "Your Zomato order"
           },
           {
             "field": "received_at",
@@ -31,13 +31,13 @@
           {
             "field": "sender",
             "predicate": "contains",
-            "value": "dsdsd"
+            "value": "noreply@swiggy.in"
           }
         ],
         "predicate": "Any",
         "actions": [
           {
-            "action": "mark_as_unread"
+            "action": "mark_as_read"
           }
         ]
       }
