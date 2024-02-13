@@ -1,0 +1,46 @@
+{
+    "rules": [
+      {
+        "conditions": [
+          {
+            "field": "sender",
+            "predicate": "contains",
+            "value": "noreply@zomato.com"
+          },
+          {
+            "field": "subject",
+            "predicate": "contains",
+            "value": "fefef"
+          },
+          {
+            "field": "received_at",
+            "predicate": "less_than",
+            "value": "2024-02-13"
+          }
+        ],
+        "predicate": "All",
+        "actions": [
+          {
+            "action": "move_message",
+            "destination_folder": "SPAM"
+          }
+        ]
+      },
+      {
+        "conditions": [
+          {
+            "field": "sender",
+            "predicate": "contains",
+            "value": "dsdsd"
+          }
+        ],
+        "predicate": "Any",
+        "actions": [
+          {
+            "action": "mark_as_unread"
+          }
+        ]
+      }
+    ]
+  }
+  

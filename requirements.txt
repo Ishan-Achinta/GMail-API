@@ -1,0 +1,5 @@
+google-auth==2.5.1
+google-auth-oauthlib==0.4.6
+google-auth-httplib2==0.1.0
+google-api-python-client==2.34.0
+pg8000==1.19.5
